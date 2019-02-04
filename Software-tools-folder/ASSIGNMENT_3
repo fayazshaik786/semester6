@@ -1,0 +1,46 @@
+
+import javax.swing.*;
+import javax.swing.event.*;
+public class SpinnerExample
+{
+  public static void main(String[] args)
+  {
+    JFrame f=new JFrame("Magic Square");
+    JSpinner spinner1=new JSpinner();
+    spinner1.setBounds(100,100,50,30);
+    JSpinner spinner2=new JSpinner();
+    spinner2.setBounds(150,100,50,30);
+    JSpinner spinner3=new JSpinner();
+    spinner3.setBounds(200,100,50,30);
+    JSpinner spinner4=new JSpinner();
+    spinner4.setBounds(100,130,50,30);
+    JSpinner spinner5=new JSpinner();
+    spinner5.setBounds(150,130,50,30);
+    JSpinner spinner6=new JSpinner();
+    spinner6.setBounds(200,130,50,30);
+    JSpinner spinner7=new JSpinner();
+    spinner7.setBounds(100,160,50,30);
+    JSpinner spinner8=new JSpinner();
+    spinner8.setBounds(150,160,50,30);
+    JSpinner spinner9=new JSpinner();
+    spinner9.setBounds(200,160,50,30);
+    f.add(spinner1);
+    f.add(spinner2);
+    f.add(spinner3);
+    f.add(spinner4);
+    f.add(spinner5);
+    f.add(spinner6);
+    f.add(spinner7);
+    f.add(spinner8);
+    f.add(spinner9);
+    JButton b=new JButton("show answer");
+    b.setBounds(300,100,95,30);
+    JTextField tf=new JTextField();
+    tf.setBounds(300,150,150,20);
+    f.add(b);
+    f.add(tf);
+    f.setSize(500,500);
+    f.setLayout(null);
+    f.setVisible(true);
+  }
+}
