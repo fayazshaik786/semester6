@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct freespace_linkedlist
+{
+  int starting_address;
+  int ending_address;
+  struct freespace_linkedlist* next;
+};
+
+struct memory_structure
+{
+  int process_id;
+  int memory;
+};
+
+struct allocated_memory
+{
+  int process_id_memory;
+  int starting_address_memory;
+  int ending_address_memory;
+  struct allocated_memory* next;
+};
+
+int main()
+{
+  
+  return 0;
+}
