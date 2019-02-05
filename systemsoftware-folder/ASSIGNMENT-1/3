@@ -1,0 +1,28 @@
+%{
+#include<stdio.h>
+int id=0;
+int key=0;
+int constants=0;
+%}
+
+%%
+int|float {key++;}
+
+([a-zA-Z][0-9])+|[a-zA-Z]* {id++;}
+
+(=[0-9]*|="[a-zA-Z]*") {constants;}
+
+%%
+int yywrap()
+{
+  return 1;
+}
+
+int main()
+{
+  printf("enter some code");
+  yylex();
+  printf("identifer=%d key=%d constants=%d",id,key,constants);
+}
+ 
+  
